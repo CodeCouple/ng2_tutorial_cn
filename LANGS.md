@@ -1,2 +1,0 @@
-* [Chinese](zh/)
-* [English](en/)

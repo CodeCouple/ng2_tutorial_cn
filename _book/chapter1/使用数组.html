@@ -1,0 +1,340 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>使用数组 | Angular2权威指南学习记录</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../chapter1/扩展应用.html" />
+    
+    
+    <link rel="prev" href="../chapter1/给组件添加数据.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="1.6"
+        data-chapter-title="使用数组"
+        data-filepath="chapter1/使用数组.md"
+        data-basepath=".."
+        data-revision="Sat Jan 30 2016 18:49:35 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> [第一章]</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="chapter1/简版reddit.html">
+            
+                
+                    <a href="../chapter1/简版reddit.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        简版reddit
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1/开始.html">
+            
+                
+                    <a href="../chapter1/开始.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        开始
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="chapter1/第一个typescript程序.html">
+            
+                
+                    <a href="../chapter1/第一个typescript程序.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        第一个typescript程序
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="chapter1/运行应用.html">
+            
+                
+                    <a href="../chapter1/运行应用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        运行应用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="chapter1/给组件添加数据.html">
+            
+                
+                    <a href="../chapter1/给组件添加数据.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        给组件添加数据
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="chapter1/使用数组.html">
+            
+                
+                    <a href="../chapter1/使用数组.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        使用数组
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="chapter1/扩展应用.html">
+            
+                
+                    <a href="../chapter1/扩展应用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                        扩展应用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="chapter1/渲染多行.html">
+            
+                
+                    <a href="../chapter1/渲染多行.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                        渲染多行
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Angular2权威指南学习记录</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="&#x4F7F;&#x7528;&#x6570;&#x7EC4;">&#x4F7F;&#x7528;&#x6570;&#x7EC4;</h2>
+<p>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5BF9;&#x4E00;&#x4E2A;&#x540D;&#x5B57;&#x8BF4;&quot;Hello&quot;&#xFF0C;&#x4F46;&#x600E;&#x6837;&#x5411;&#x4E00;&#x4E32;&#x540D;&#x5B57;&#x8BF4;&quot;Hello&quot;&#x5462;&#xFF1F;</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x7528;&#x8FC7;Angular 1&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x7528;&#x8FC7;ng_repeat&#x6307;&#x4EE4;&#x3002;&#x5728;Angular 2&#x4E2D;&#xFF0C;&#x7C7B;&#x4F3C;&#x7684;&#x6307;&#x4EE4;&#x662F;NgFor&#x3002;&#x5B83;&#x7684;&#x8BED;&#x6CD5;&#x6709;&#x4E00;&#x70B9;&#x4E0D;&#x540C;&#xFF0C;&#x4F46;&#x6709;&#x540C;&#x6837;&#x7684;&#x76EE;&#x7684;&#xFF1A;<strong>&#x7528;&#x4E00;&#x8FDE;&#x4E32;&#x5BF9;&#x8C61;&#x91CD;&#x590D;&#x76F8;&#x540C;&#x7684;&#x6807;&#x7B7E;&#x8BED;&#x53E5;</strong>&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x6765;&#x6539;&#x53D8;&#x6211;&#x4EEC;&#x7684;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code>import { bootstrap } from &quot;angular2/platform/browser&quot;; 
+import { Component } from &quot;angular2/core&quot;;
+import {NgFor} from &quot;angular2/common&quot;;
+
+@Component({
+    selector: &apos;hello-world&apos;,
+    template: `
+    &lt;ul&gt;
+        &lt;li *ngFor=&quot;#name of names&quot;&gt;Hello {{ name }}&lt;/li&gt;
+    &lt;ul&gt;
+`
+})
+class HelloWorld { 
+    names: string[];
+
+    constructor() {
+        this.names = [&apos;Ari&apos;,&apos;Felipe&apos;,&apos;Carlos&apos;,&apos;Nate&apos;];
+    }
+}
+
+bootstrap(HelloWorld);
+</code></pre><p>&#x7B2C;&#x4E00;&#x70B9;&#x4E0D;&#x540C;&#x5728;&#x4E8E;&#x5728;&#x4E8E;HelloWorld&#x7C7B;&#x4E2D;&#x7684;string[]&#x5C5E;&#x6027;&#x3002;&#x8FD9;&#x6761;&#x8BED;&#x53E5;&#x4EE3;&#x8868;names&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x6570;&#x7EC4;&#x7C7B;&#x578B;&#x3002;&#x53E6;&#x4E00;&#x79CD;&#x5199;&#x6CD5;&#x662F;Array\<string>&#x3002;</string></p>
+<p>&#x6211;&#x4EEC;&#x5C06;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;this.names&#x8D4B;&#x503C;&#x4E3A;[&apos;Ari&apos;,&apos;Felipe&apos;,&apos;Carlos&apos;,&apos;Nate&apos;]&#x3002;</p>
+<p>&#x7B2C;&#x4E8C;&#x70B9;&#x4E0D;&#x540C;&#x5728;&#x4E8E;templete&#xFF0C;&#x73B0;&#x5728;&#xFF0C;template&#x4E2D;&#x6709;&#x4E00;&#x4E2A;ul&#x548C;&#x4E00;&#x4E2A;li&#xFF0C;li&#x6709;&#x4E00;&#x4E2A;&#x65B0;&#x5C5E;&#x6027;&#xFF1A;*ngFor=&quot;#name of names&quot;&#x3002;</p>
+<p>*ngFor&#x8868;&#x793A;&#x6211;&#x4EEC;&#x60F3;&#x5728;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x4E0A;&#x4F7F;&#x7528;NgFor&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;NgFor&#x548C;for&#x5FAA;&#x73AF;&#x7C7B;&#x4F3C;&#xFF1B;&#x6211;&#x4EEC;&#x8981;&#x4E3A;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x521B;&#x9020;&#x65B0;&#x7684;DOM&#x5143;&#x7D20;&#x3002;</p>
+<p>&quot;#name of names&quot;&#x4E2D;&#xFF0C;names&#x662F;&#x6211;&#x4EEC;&#x5728;HelloWorld&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x6570;&#x7EC4;&#x3002;#name&#x53EB;&#x505A;<em>&#x5F15;&#x7528;&#xFF08;reference&#xFF09;</em>&#xFF0C;#name of names &#x8868;&#x793A;&#x904D;&#x5386;names&#x4E2D;&#x5F97;&#x6BCF;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x5E76;&#x5C06;&#x53D8;&#x91CF;name&#x8D4B;&#x503C;&#x7ED9;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x3002;</p>
+<p>NgFor&#x65B9;&#x6CD5;&#x4F1A;&#x4E3A;names&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x6784;&#x9020;&#x4E00;&#x4E2A;li&#x6807;&#x7B7E;&#xFF0C;&#x5E76;&#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x5C40;&#x90E8;&#x53D8;&#x91CF;name&#x6307;&#x5411;&#x5F53;&#x524D;&#x5143;&#x7D20;&#xFF0C;&#x4E4B;&#x540E;&#xFF0C;&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#x5C06;&#x4F1A;&#x5728;Hello  &#x4E2D;&#x88AB;&#x53D6;&#x4EE3;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x4E0D;&#x4E00;&#x5B9A;&#x8981;&#x7528;&#x5F15;&#x7528;&#x53D8;&#x91CF;name&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x5199;&#xFF1A;</p>
+<pre><code>&lt;li *ngFor=&quot;#foobar of names&quot;&gt;Hello {{ foobar }}&lt;/li&gt;
+</code></pre><p>&#x4F46;&#x5982;&#x679C;&#x53CD;&#x7740;&#x5199;&#x5462;&#xFF1F;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x8FD9;&#x6837;&#x5199;&#x4F1A;&#x53D1;&#x751F;&#x4EC0;&#x4E48;&#xFF1A;</p>
+<pre><code>&lt;li *ngFor=&quot;#names of foobar&quot;&gt;Hello {{ name }}&lt;/li&gt;
+</code></pre><p>&#x7A0B;&#x5E8F;&#x4F1A;&#x62A5;&#x9519;&#x56E0;&#x4E3A;foobar&#x4E0D;&#x662F;&#x6211;&#x4EEC;&#x7684;&#x7EC4;&#x4EF6;&#x4E2D;&#x5F97;&#x5C5E;&#x6027;&#x3002;</p>
+<p><em>NgFor&#x4F1A;&#x91CD;&#x590D;ngFor&#x5173;&#x8054;&#x7684;&#x5143;&#x7D20;&#x3002;&#x8FD9;&#x5C31;&#x662F;&#x4E3A;&#x4EC0;&#x4E48;&#x6211;&#x4EEC;&#x8981;&#x628A;&#x5B83;&#x5199;&#x5728;li&#x4E2D;&#x800C;&#x4E0D;&#x662F;ul&#x4E2D;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x91CD;&#x590D;&#x7684;&#x662F;&#x5217;&#x8868;&#x8868;&#x9879;&#xFF08;li&#xFF09;&#x800C;&#x4E0D;&#x662F;&#x5217;&#x8868;&#x672C;&#x8EAB;&#xFF08;ul&#xFF09;&#x3002;</em></p>
+<p>&#x73B0;&#x5728;&#x91CD;&#x65B0;&#x52A0;&#x8F7D;&#x6211;&#x4EEC;&#x7684;&#x9875;&#x9762;&#xFF0C;&#x4F60;&#x5C31;&#x4F1A;&#x770B;&#x5230;&#x6570;&#x7EC4;&#x4E2D;&#x5F97;&#x6BCF;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x90FD;&#x6709;&#x4E00;&#x4E2A;li&#x3002;</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../chapter1/给组件添加数据.html" class="navigation navigation-prev " aria-label="Previous page: 给组件添加数据"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../chapter1/扩展应用.html" class="navigation navigation-next " aria-label="Next page: 扩展应用"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
