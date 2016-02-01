@@ -1,0 +1,405 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>第一个typescript程序 | Angular2权威指南学习记录</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../chapter1/运行应用.html" />
+    
+    
+    <link rel="prev" href="../chapter1/开始.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="1.3"
+        data-chapter-title="第一个typescript程序"
+        data-filepath="chapter1/第一个typescript程序.md"
+        data-basepath=".."
+        data-revision="Sat Jan 30 2016 18:49:35 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> [第一章]</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="chapter1/简版reddit.html">
+            
+                
+                    <a href="../chapter1/简版reddit.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        简版reddit
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1/开始.html">
+            
+                
+                    <a href="../chapter1/开始.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        开始
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="chapter1/第一个typescript程序.html">
+            
+                
+                    <a href="../chapter1/第一个typescript程序.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        第一个typescript程序
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="chapter1/运行应用.html">
+            
+                
+                    <a href="../chapter1/运行应用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        运行应用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="chapter1/给组件添加数据.html">
+            
+                
+                    <a href="../chapter1/给组件添加数据.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        给组件添加数据
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="chapter1/使用数组.html">
+            
+                
+                    <a href="../chapter1/使用数组.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        使用数组
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="chapter1/扩展应用.html">
+            
+                
+                    <a href="../chapter1/扩展应用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                        扩展应用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="chapter1/渲染多行.html">
+            
+                
+                    <a href="../chapter1/渲染多行.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                        渲染多行
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Angular2权威指南学习记录</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="&#x7B2C;&#x4E00;&#x4E2A;typescript">&#x7B2C;&#x4E00;&#x4E2A;TypeScript</h2>
+<p>&#x73B0;&#x5728;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x6211;&#x4EEC;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;TypeScript&#x6587;&#x4EF6;&#x4E86;&#x3002;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;<strong>app.ts</strong></p>
+<pre><code>import { bootstrap } from &quot;angular2/platform/browser&quot;; 
+import { Component } from &quot;angular2/core&quot;;
+
+@Component({
+      selector: &apos;hello-world&apos;,
+      template: `
+      &lt;div&gt;
+        Hello world
+      &lt;/div&gt;
+    `
+})
+class HelloWorld { 
+}
+
+bootstrap(HelloWorld);
+</code></pre><p>&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x8D77;&#x521D;&#x770B;&#x8D77;&#x6765;&#x53EF;&#x80FD;&#x6709;&#x4E9B;&#x5413;&#x4EBA;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x7528;&#x62C5;&#x5FC3;&#xFF0C;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x6765;&#x4E00;&#x6B65;&#x6B65;&#x5206;&#x6790;&#x3002;<br>
+import&#x8BED;&#x53E5;&#x5F15;&#x5165;&#x4E86;&#x6211;&#x4EEC;&#x5728;&#x5199;&#x4EE3;&#x7801;&#x65F6;&#x9700;&#x8981;&#x7528;&#x5230;&#x7684;&#x6A21;&#x5757;&#x3002;&#x5728;&#x8FD9;&#x91CC;&#xFF0C;&#x6211;&#x4EEC;&#x5F15;&#x5165;&#x4E86;&#x4E24;&#x4E2A;&#x6A21;&#x5757;&#xFF1A;Component&#x548C;Bootstrap&#x3002;<br>
+&#x6211;&#x4EEC;&#x4ECE;&quot;angular2/core&quot;&#x4E2D;&#x5F15;&#x5165;&#x4E86;Component&#xFF0C;&#x5B83;&#x4F1A;&#x544A;&#x8BC9;&#x6211;&#x4EEC;&#x7684;&#x7A0B;&#x5E8F;&#x5982;&#x4F55;&#x5BFB;&#x627E;&#x4F9D;&#x8D56;&#x3002;&#x540C;&#x6837;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x6211;&#x4EEC;&#x4ECE;&quot;angular/platform/browser&quot;&#x4E2D;&#x5F15;&#x5165;bootstrap&#x3002;<br>
+&#x6CE8;&#x610F;import&#x8BED;&#x6CD5;&#x7684;&#x7ED3;&#x6784;&#x662F;<code>import {thing} from wherever</code>&#x3002;{thing} &#x8FD9;&#x90E8;&#x5206;&#x53EB;&#x505A;&#x91CD;&#x6784;&#xFF08;destructuring&#xFF09;&#x3002;&#x91CD;&#x6784;&#xFF08;destructuring&#xFF09;&#x662F;ES6&#x63D0;&#x4F9B;&#x7684;&#x4E00;&#x4E2A;&#x7279;&#x6027;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x5728;&#x4E0B;&#x4E00;&#x7AE0;&#x8BE6;&#x7EC6;&#x8BA8;&#x8BBA;&#x3002;</p>
+<h3 id="&#x6784;&#x9020;&#x7EC4;&#x4EF6;">&#x6784;&#x9020;&#x7EC4;&#x4EF6;</h3>
+<p>Angular 2&#x6700;&#x4F1F;&#x5927;&#x7684;&#x601D;&#x60F3;&#x4E4B;&#x4E00;&#x5C31;&#x662F;&#x7EC4;&#x4EF6;&#x7684;&#x601D;&#x60F3;&#x3002;</p>
+<p>&#x5728;&#x6211;&#x4EEC;&#x7684;Angular App&#x4E2D;&#x6211;&#x4EEC;&#x901A;&#x8FC7;HTML&#x6765;&#x5B9E;&#x73B0;&#x4EA4;&#x4E92;&#x5F0F;&#x5E94;&#x7528;&#xFF0C;&#x4F46;&#x662F;&#x6D4F;&#x89C8;&#x5668;&#x53EA;&#x8BA4;&#x8BC6;&#x4F8B;&#x5982;\<select>&#x3001;\<form>&#x6216;\<video>&#x8FD9;&#x4E9B;&#x57FA;&#x7840;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x81EA;&#x5DF1;&#x5B9A;&#x4E49;&#x7684;&#x5185;&#x5EFA;&#x6807;&#x7B7E;&#xFF0C;&#x4F46;&#x662F;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x60F3;&#x8BA9;&#x6D4F;&#x89C8;&#x5668;&#x8BC6;&#x522B;&#x65B0;&#x7684;&#x6807;&#x7B7E;&#x5E94;&#x8BE5;&#x600E;&#x4E48;&#x529E;&#x5462;&#xFF1F;&#x4F8B;&#x5982;&#x6211;&#x4EEC;&#x60F3;&#x6709;&#x4E00;&#x4E2A;\<weather>&#x6807;&#x7B7E;&#x6765;&#x663E;&#x793A;&#x5929;&#x6C14;&#xFF1F;&#x6216;&#x8005;&#x7528;&#x4E00;&#x4E2A;\<login>&#x6807;&#x7B7E;&#x6765;&#x6784;&#x9020;&#x4E00;&#x4E2A;&#x767B;&#x5F55;&#x677F;&#x5757;&#xFF1F;</login></weather></video></form></select></p>
+<p>&#x7EC4;&#x4EF6;&#x7684;&#x7406;&#x5FF5;&#x5728;&#x4E8E;&#xFF1A;&#x6559;&#x6D4F;&#x89C8;&#x5668;&#x8BC6;&#x522B;&#x6709;&#x65B0;&#x529F;&#x80FD;&#x7684;&#x65B0;&#x6807;&#x7B7E;&#x3002;</p>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x6765;&#x6784;&#x9020;&#x7B2C;&#x4E00;&#x4E2A;&#x7EC4;&#x4EF6;&#x3002;&#x5F53;&#x6211;&#x4EEC;&#x5199;&#x5B8C;&#x8FD9;&#x4E2A;&#x7EC4;&#x4EF6;&#x540E;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5728;&#x6211;&#x4EEC;&#x7684;HTML&#x6587;&#x4EF6;&#x4E2D;&#x8FD9;&#x6837;&#x5199;&#x4E86;&#xFF1A;<br>
+<code>&lt;hello-world&gt;&lt;/hello-world&gt;</code></p>
+<p>&#x90A3;&#x4E48;&#x5230;&#x5E95;&#x5982;&#x4F55;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x7EC4;&#x4EF6;&#x5462;&#xFF1F;&#x4E00;&#x4E2A;&#x57FA;&#x672C;&#x7684;&#x7EC4;&#x4EF6;&#x8981;&#x6709;&#x8FD9;&#x4E24;&#x90E8;&#x5206;&#xFF1A;</p>
+<ol>
+<li>&#x4E00;&#x4E2A;&#x7EC4;&#x4EF6;&#x6CE8;&#x89E3;&#xFF08;whan&apos;s this?&#xFF09;</li>
+<li>&#x4E00;&#x4E2A;&#x7EC4;&#x4EF6;&#x5B9A;&#x4E49;&#x7C7B;</li>
+</ol>
+<p>&#x5982;&#x679C;&#x4F60;&#x5199;&#x8FC7;JavaScript&#x7A0B;&#x5E8F;&#xFF0C;&#x90A3;&#x4E48;&#x4E0B;&#x9762;&#x7684;&#x8FD9;&#x51E0;&#x53E5;&#x4EE3;&#x7801;&#x5728;&#x4F60;&#x770B;&#x6765;&#x53EF;&#x80FD;&#x602A;&#x602A;&#x7684;&#xFF1A;</p>
+<pre><code>@Component({
+    //&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;
+})
+</code></pre><p>&#x8FD9;&#x91CC;&#x662F;&#x600E;&#x4E48;&#x56DE;&#x4E8B;&#x5462;&#xFF1F;&#x5982;&#x679C;&#x4F60;&#x6709;Java&#x5F00;&#x53D1;&#x7ECF;&#x9A8C;&#x7684;&#x8BDD;&#x53EF;&#x80FD;&#x4F1A;&#x5BF9;&#x8FD9;&#x79CD;&#x8BED;&#x53E5;&#x6BD4;&#x8F83;&#x719F;&#x6089;&#xFF1A;&#x8FD9;&#x5C31;&#x662F;&#x6CE8;&#x89E3;&#xFF08;annotation&#xFF09;&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x628A;&#x6CE8;&#x89E3;&#x7406;&#x89E3;&#x4E3A;&#x589E;&#x52A0;&#x5230;&#x4F60;&#x4EE3;&#x7801;&#x4E2D;&#x7684;&#x5143;&#x6570;&#x636E;&#x3002;&#x5F53;&#x6211;&#x4EEC;&#x5728;HelloWorld&#x7C7B;&#x4E2D;&#x4F7F;&#x7528;@Component&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x662F;&#x5C06;HelloWorld&#x8FD9;&#x4E2A;&#x7C7B;&#x88C5;&#x9970;&#x6210;&#x4E00;&#x4E2A;&#x7EC4;&#x4EF6;&#x3002;</p>
+<p>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x80FD;&#x591F;&#x5728;&#x6807;&#x7B7E;&#x8BED;&#x8A00;&#x4E2D;&#x4F7F;&#x7528;<hello-world>&#xFF0C;&#x90A3;&#x4E48;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x6765;&#x914D;&#x7F6E;@Component&#x5E76;&#x5C06;&#x5B83;&#x7684;&#x9009;&#x62E9;&#x5668;&#x6307;&#x5B9A;&#x4E3A;hello-world&#x3002;</hello-world></p>
+<pre><code>@Component({
+    selector: &apos;hello-world&apos;
+})
+</code></pre><p>&#x5982;&#x679C;&#x4F60;&#x719F;&#x6089;CSS&#x9009;&#x62E9;&#x5668;&#x3001;XPath&#x6216;&#x8005;JQuery&#x9009;&#x62E9;&#x5668;&#xFF0C;&#x4F60;&#x5C31;&#x77E5;&#x9053;&#x8BBE;&#x7F6E;&#x9009;&#x62E9;&#x5668;&#x7684;&#x65B9;&#x6CD5;&#x6709;&#x5F88;&#x591A;&#x3002;Angular&#x4E3A;&#x7EC4;&#x5408;&#x9009;&#x62E9;&#x5668;&#xFF08;what &apos;s selector mix?&#xFF09;&#x52A0;&#x5165;&#x4E86;&#x81EA;&#x5DF1;&#x7684;&#x7279;&#x6027;&#xFF0C;&#x6211;&#x4EEC;&#x7A0D;&#x540E;&#x5C06;&#x8BB2;&#x5230;&#x5B83;&#xFF0C;&#x76EE;&#x524D;&#x53EA;&#x9700;&#x8981;&#x77E5;&#x9053;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#x5C31;&#x662F;<strong>&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x6807;&#x7B7E;</strong>&#x3002;</p>
+<p>selector&#x5C5E;&#x6027;&#x8868;&#x660E;&#x8FD9;&#x4E2A;&#x7EC4;&#x4EF6;&#x5C06;&#x4F7F;&#x7528;&#x54EA;&#x4E2A;DOM&#x5143;&#x7D20;&#x3002;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x7684;&#x6A21;&#x677F;&#x4E2D;&#x6709;<hello-world>&lt;/hello-world&gt;&#x8FD9;&#x4E2A;&#x6807;&#x7B7E;&#x7684;&#x8BDD;&#xFF0C;&#x8FD9;&#x4E2A;&#x6807;&#x7B7E;&#x4F1A;&#x88AB;&#x7F16;&#x8BD1;&#x5668;&#x7528;Component&#x7C7B;&#x7F16;&#x8BD1;&#x3002;</hello-world></p>
+<h3 id="&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x6A21;&#x677F;">&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x6A21;&#x677F;</h3>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;template&#x9009;&#x9879;&#x4E3A;@Component&#x589E;&#x52A0;&#x4E00;&#x4E2A;&#x6A21;&#x677F;&#xFF1A;</p>
+<pre><code>@Component({
+    selector: &apos;hello-world&apos;,
+    template: `
+    &lt;div&gt;
+        Hello world
+    &lt;/div&gt;
+    `
+})
+</code></pre><p>&#x6CE8;&#x610F;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x5B9A;&#x4E49;template&#x7684;&#x65F6;&#x5019;&#x4F7F;&#x7528;&#x7684;&#x662F;&#x53CD;&#x5F15;&#x53F7;&#xFF08;`...`&#xFF09;&#x3002;&#x8FD9;&#x662F;ES6&#x7684;&#x4E00;&#x4E2A;&#x65B0;&#x7279;&#x6027;&#xFF08;&#x800C;&#x4E14;&#x975E;&#x5E38;&#x68D2;&#xFF01;&#xFF09;&#xFF0C;&#x5B83;&#x8BA9;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5199;&#x591A;&#x884C;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x7528;&#x53CD;&#x5F15;&#x53F7;&#x6765;&#x5199;&#x591A;&#x884C;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x65B9;&#x5F0F;&#x5927;&#x5927;&#x7684;&#x65B9;&#x4FBF;&#x6211;&#x4EEC;&#x5728;&#x4EE3;&#x7801;&#x6587;&#x4EF6;&#x4E2D;&#x63D2;&#x5165;&#x6A21;&#x677F;&#x3002;</p>
+<h4 id="&#x542F;&#x52A8;&#x7A0B;&#x5E8F;">&#x542F;&#x52A8;&#x7A0B;&#x5E8F;</h4>
+<p>&#x6700;&#x540E;&#x4E00;&#x884C;&#x4EE3;&#x7801;<code>bootstrap(HelloWorld);</code>&#x4F1A;&#x542F;&#x52A8;&#x7A0B;&#x5E8F;&#x3002;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x8868;&#x793A;&#x8FD9;&#x4E2A;&#x5E94;&#x7528;&#x7684;&quot;main&quot;&#x7EC4;&#x4EF6;&#x662F;HelloWorld&#x3002;</p>
+<p>&#x4E00;&#x65E6;&#x6211;&#x4EEC;&#x7684;&#x7A0B;&#x5E8F;&#x88AB;&#x5F15;&#x5BFC;&#x542F;&#x52A8;&#x540E;&#xFF0C;HelloWorld&#x7EC4;&#x4EF6;&#x4F1A;&#x88AB;&#x5E94;&#x7528;&#x5230;index.html&#x4E2D;&#x6240;&#x6709;&#x7684;<hello-world>&lt;/hello-world&gt;&#x4EE3;&#x7801;&#x6BB5;&#x4E2D;&#x3002;&#x8BA9;&#x6211;&#x4EEC;&#x6765;&#x8BD5;&#x8BD5;&#x5427;&#xFF01;</hello-world></p>
+<h4 id="&#x52A0;&#x8F7D;&#x7A0B;&#x5E8F;">&#x52A0;&#x8F7D;&#x7A0B;&#x5E8F;</h4>
+<p>&#x4E3A;&#x4E86;&#x8FD0;&#x884C;&#x7A0B;&#x5E8F;&#xFF0C;&#x8FD8;&#x6709;&#x4E24;&#x4EF6;&#x4E8B;&#x8981;&#x505A;&#xFF1A;</p>
+<ol>
+<li>&#x6211;&#x4EEC;&#x5F97;&#x544A;&#x8BC9;HTML&#x6587;&#x4EF6;&#x5C06;app&#x6587;&#x4EF6;&#x5F15;&#x5165;&#x8FDB;&#x6765;</li>
+<li>&#x6211;&#x4EEC;&#x8981;&#x4F7F;&#x7528;<hello-world>&#x7EC4;&#x4EF6;</hello-world></li>
+</ol>
+<p>&#x5728;body&#x4E2D;&#x52A0;&#x5165;&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code>&lt;!doctype html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;title&gt;First App - Hello world&lt;/title&gt;
+    &lt;!-- Libraries --&gt;
+    &lt;script src=&quot;node_modules/es6-shim/es6-shim.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;node_modules/angular2/bundles/angular2-polyfills.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;node_modules/systemjs/dist/system.src.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;node_modules/rxjs/bundles/Rx.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;node_modules/angular2/bundles/angular2.dev.js&quot;&gt;&lt;/script&gt;
+    &lt;!-- Stylesheet --&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;resources/vendor/semantic.min.c\ ss&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;styles.css&quot;&gt; 
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;script&gt;
+    System.config({
+        packages: {
+            app: {
+                format: &apos;register&apos;,
+                defaultExtension: &apos;js&apos;
+            }
+        }
+    });
+    System.import(&apos;app.js&apos;)
+        .then(null, console.error.bind(console));
+    &lt;/script&gt;
+
+    &lt;hello-world&gt;&lt;/hello-world&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre><p>&#x5728;script&#x6807;&#x7B7E;&#x4E2D;&#x914D;&#x7F6E;&#x6A21;&#x5757;&#x52A0;&#x8F7D;&#x5668;&#xFF0C;System.js&#x3002;&#x4E0B;&#x9762;&#x4E00;&#x884C;&#x4EE3;&#x7801;&#x975E;&#x5E38;&#x91CD;&#x8981;&#xFF1A;</p>
+<p><code>System.import(&apos;app.js&apos;)</code></p>
+<p>&#x8FD9;&#x884C;&#x4EE3;&#x7801;&#x544A;&#x8BC9;System.js&#x6211;&#x4EEC;&#x60F3;&#x52A0;&#x8F7D;app.js&#x4F5C;&#x4E3A;&#x7A0B;&#x5E8F;&#x7684;&#x5165;&#x53E3;&#xFF0C;&#x4F46;&#x662F;&#x6709;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#xFF1A;&#x6211;&#x4EEC;&#x8FD8;&#x6CA1;&#x6709;app.js&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x5462;&#xFF01;&#xFF08;app.ts&#x662F;&#x4E00;&#x4E2A;TypeScript&#x6587;&#x4EF6;.&#xFF09;</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../chapter1/开始.html" class="navigation navigation-prev " aria-label="Previous page: 开始"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../chapter1/运行应用.html" class="navigation navigation-next " aria-label="Next page: 运行应用"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

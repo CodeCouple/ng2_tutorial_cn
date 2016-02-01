@@ -1,0 +1,4 @@
+nohup: ignoring input
+[0;31mYou need to install "gitbook-cli" to have access to the gitbook command anywhere on your system.[0m
+[0;31mIf you've installed this package globally, you need to uninstall it.[0m
+[0;31m>> Run "npm uninstall -g gitbook" then "npm install -g gitbook-cli"[0m
